@@ -14,8 +14,7 @@ setup(
     install_requires=[
         "nltk",
         "numpy",
-        "spacy",
-        # add any others (e.g., 'subprocess' is part of stdlib, so not needed here)
+        "spacy"
     ],
     classifiers=[
         "Programming Language :: Python :: 3",
