@@ -1,0 +1,12 @@
+LICENSE
+README.md
+pyproject.toml
+setup.py
+prosody_say/__init__.py
+prosody_say/core.py
+prosody_say.egg-info/PKG-INFO
+prosody_say.egg-info/SOURCES.txt
+prosody_say.egg-info/dependency_links.txt
+prosody_say.egg-info/requires.txt
+prosody_say.egg-info/top_level.txt
+tests/test_prosody.py
