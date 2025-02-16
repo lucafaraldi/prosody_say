@@ -22,4 +22,9 @@ setup(
         "Operating System :: MacOS",
     ],
     python_requires="<3.13",
+    entry_points={
+        "console_scripts": [
+            "prosody-download-resources=prosody_say.cli:download_resources",
+        ],
+    },
 )

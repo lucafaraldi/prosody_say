@@ -36,6 +36,10 @@ jobs:
         run: |
           python -m spacy download en_core_web_sm
 
+      - name: Download NLTK resources
+        run: |
+          python -m nltk.downloader vader_lexicon punkt averaged_perceptron_tagger
+
       - name: Lint with flake8
         run: |
           # First pass: fail on syntax errors or undefined names
