@@ -9,7 +9,7 @@ setup(
     long_description=open("README.md").read(),
     long_description_content_type="text/markdown",
     url="https://github.com/lucafaraldi/prosody_say",
-    license="GPL-3.0",  # or Apache-2.0, etc.
+    license="GPL-3.0", 
     packages=find_packages(),
     install_requires=[
         "nltk",
@@ -18,8 +18,8 @@ setup(
     ],
     classifiers=[
         "Programming Language :: Python :: 3",
-        "License :: OSI Approved :: GNU Lesser General Public License v3 (LGPLv3)",
-        "Operating System :: MacOS",  # if you're macOS-only
+        "License :: OSI Approved :: GNU General Public License v3 (GPLv3)",
+        "Operating System :: MacOS",
     ],
     python_requires="<3.13",
 )
