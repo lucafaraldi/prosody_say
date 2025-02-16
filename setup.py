@@ -1,7 +1,7 @@
 from setuptools import setup, find_packages
 
 setup(
-    name="prosody_synthesizer",
+    name="prosody_say",
     version="0.1.0",
     author="Luca Faraldi",
     author_email="lucafaraldi@gmail.com",
