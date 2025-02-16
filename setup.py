@@ -3,7 +3,7 @@ from setuptools import setup, find_packages
 setup(
     name="prosody_synthesizer",
     version="0.1.0",
-    author="Your Name",
+    author="Luca Faraldi",
     author_email="lucafaraldi@gmail.com",
     description="A prosody processing library for TTS synthesis with say command.",
     long_description=open("README.md").read(),
