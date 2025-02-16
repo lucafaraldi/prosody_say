@@ -8,20 +8,15 @@ on:
 
 jobs:
   build:
-    # Use macOS to support 'say' if your tests do or mock it
     runs-on: macos-latest
 
     strategy:
-      # If you only test Python 3.12, keep it as a single version.
-      # If you want more coverage, add them here (e.g. ["3.10", "3.11", "3.12"]).
       matrix:
         python-version: ["3.12"]
 
     steps:
-      # 1) Check out your code from GitHub
       - uses: actions/checkout@v4
 
-      # 2) Set up Python for your matrix version
       - name: Set up Python ${{ matrix.python-version }}
         uses: actions/setup-python@v3
         with:
