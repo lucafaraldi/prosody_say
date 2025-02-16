@@ -2,9 +2,9 @@ name: Python package
 
 on:
   push:
-    branches: [ "main" ]
+    branches: ["main"]
   pull_request:
-    branches: [ "main" ]
+    branches: ["main"]
 
 jobs:
   build:
@@ -17,16 +17,13 @@ jobs:
         python-version: ["3.12"]
 
     steps:
-      # 1) Check out the repository code
       - uses: actions/checkout@v4
 
-      # 2) Set up Python 3.12
       - name: Set up Python ${{ matrix.python-version }}
         uses: actions/setup-python@v3
         with:
           python-version: ${{ matrix.python-version }}
 
-      # 3) Install dependencies and your package
       - name: Install dependencies
         run: |
           python -m pip install --upgrade pip
@@ -37,7 +34,6 @@ jobs:
           # If needed, install spaCy model:
           python -m spacy download en_core_web_sm
 
-      # 4) Lint with flake8
       - name: Lint with flake8
         run: |
           # First pass: stop on syntax errors or undefined names
@@ -45,7 +41,6 @@ jobs:
           # Second pass: treat other issues as warnings
           flake8 . --count --exit-zero --max-complexity=10 --max-line-length=127 --statistics
 
-      # 5) Test with pytest
       - name: Test with pytest
         run: |
           pytest

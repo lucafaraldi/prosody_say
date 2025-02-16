@@ -9,7 +9,7 @@ setup(
     long_description=open("README.md").read(),
     long_description_content_type="text/markdown",
     url="https://github.com/lucafaraldi/prosody_say",
-    license="LGPL-2.1",  # or Apache-2.0, etc.
+    license="GPL-3.0",  # or Apache-2.0, etc.
     packages=find_packages(),
     install_requires=[
         "nltk",
