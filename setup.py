@@ -19,8 +19,8 @@ setup(
     ],
     classifiers=[
         "Programming Language :: Python :: 3",
-        "License :: OSI Approved :: MIT License",  # or your chosen license
-        "Operating System :: OS Independent",
+        "License :: OSI Approved :: GNU Lesser General Public License v3 (LGPLv3)",
+        "Operating System :: MacOS",  # if you're macOS-only
     ],
-    python_requires=">=3.6",
+    python_requires="<3.13",
 )
