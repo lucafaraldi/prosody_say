@@ -8,17 +8,14 @@ on:
 
 jobs:
   build:
-    # Use macOS because your code depends on the "say" command.
     runs-on: macos-latest
 
     strategy:
-      # You mentioned testing only Python 3.12 so far
       matrix:
         python-version: ["3.12"]
 
     steps:
       - uses: actions/checkout@v4
-
       - name: Set up Python ${{ matrix.python-version }}
         uses: actions/setup-python@v3
         with:
