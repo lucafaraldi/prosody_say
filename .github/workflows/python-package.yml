@@ -29,6 +29,8 @@ jobs:
           pip install flake8 pytest
           # Install your project from setup.py
           pip install .
+          pip list | grep prosody_say
+          python -c "import prosody_say; print(prosody_say.__file__)"
 
       - name: Download spaCy model
         run: |
