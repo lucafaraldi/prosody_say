@@ -1,0 +1,2 @@
+[console_scripts]
+prosody-download-resources = prosody_say.cli:download_resources
