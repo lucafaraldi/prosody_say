@@ -91,6 +91,7 @@ class ProsodySynthesizer:
         """
         Process a phrase (list of spaCy tokens) word-by-word without grouping.
         For each non-punctuation token, compute dynamic pitch and rate values via linear interpolation.
+        Skip tokens that already look like inline commands to avoid reprocessing them.
         Return a flat string with inline commands.
         """
         # Get indices for non-punctuation tokens.
@@ -126,12 +127,17 @@ class ProsodySynthesizer:
         
         output_parts = []
         for i, token in enumerate(phrase_tokens):
-            if token.is_punct:
+            # If the token text is already an inline command, skip further processing.
+            if token.text.startswith("[[") and token.text.endswith("]]"):
+                output_parts.append(token.text)
+            elif token.is_punct:
                 output_parts.append(token.text)
             else:
                 token_out = f"[[rate {rate_map[i]}]][[pbas {pitch_map[i]}]]{token.text}"
                 output_parts.append(token_out)
+        
         return " ".join(output_parts)
+
     
     # --- Sentence-Level Processing ---
     
