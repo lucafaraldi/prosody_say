@@ -6,7 +6,7 @@ def download_resources():
     """Download all required NLTK and spaCy resources."""
     print("Downloading NLTK resources...")
     nltk.download('vader_lexicon')
-    nltk.download('punkt')
+    nltk.download('punkt_tab')
     nltk.download('averaged_perceptron_tagger')
     print("Downloading spaCy model 'en_core_web_sm'...")
     spacy.cli.download("en_core_web_sm")

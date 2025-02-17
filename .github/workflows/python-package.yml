@@ -38,7 +38,7 @@ jobs:
 
       - name: Download NLTK resources
         run: |
-          python -m nltk.downloader punkt
+          python -m nltk.downloader punkt_tab
           python -m nltk.downloader vader_lexicon
           python -m nltk.downloader averaged_perceptron_tagger
 
