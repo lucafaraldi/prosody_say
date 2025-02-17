@@ -3,6 +3,7 @@ README.md
 pyproject.toml
 setup.py
 prosody_say/__init__.py
+prosody_say/cli.py
 prosody_say/core.py
 prosody_say.egg-info/PKG-INFO
 prosody_say.egg-info/SOURCES.txt
