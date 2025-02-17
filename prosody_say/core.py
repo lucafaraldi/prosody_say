@@ -109,7 +109,7 @@ class ProsodySynthesizer:
             if compound >= 0:
                 start_rate = baseline_rate - speed_shift
                 end_rate = baseline_rate + speed_shift
-            else:
+            else: 
                 start_rate = baseline_rate + speed_shift
                 end_rate = baseline_rate - speed_shift
             for j, idx in enumerate(word_indices):
