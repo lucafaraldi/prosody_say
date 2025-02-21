@@ -1,6 +1,6 @@
 Metadata-Version: 2.2
 Name: prosody_say
-Version: 0.1.1
+Version: 0.1.2
 Summary: A prosody processing library for TTS synthesis with say command.
 Home-page: https://github.com/lucafaraldi/prosody_say
 Author: Luca Faraldi
