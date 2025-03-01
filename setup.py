@@ -2,7 +2,7 @@ from setuptools import setup, find_packages
 
 setup(
     name="prosody_say",
-    version="0.1.3",
+    version="0.1.4",
     author="Luca Faraldi",
     author_email="lucafaraldi@gmail.com",
     description="A prosody processing library for TTS synthesis.",
